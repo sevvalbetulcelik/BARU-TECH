@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BARÜ TECH teknoloji ve yazılım etkinlikleri.">
+    <title>Etkinlikler | BARÜ TECH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Ana menü">
+            <a href="index.html" class="logo">BARÜ<span>TECH</span></a>
+
+            <div class="nav-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="etkinlikler.html" class="active">Etkinlikler</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="events-page">
+
+        <section class="page-heading">
+            <p class="eyebrow">KEŞFET · ÖĞREN · GELİŞTİR</p>
+            <h1>Teknoloji <span>Etkinlikleri</span></h1>
+            <p>Yeni beceriler kazanabileceğin, fikirlerini geliştirebileceğin etkinlikleri keşfet.</p>
+        </section>
+
+        <section class="search-section" aria-label="Etkinlik arama">
+            <label for="eventSearch">Etkinlik başlığına göre ara</label>
+
+            <div class="search-controls">
+                <input
+                    type="search"
+                    id="eventSearch"
+                    placeholder="Örneğin: Python, yapay zekâ..."
+                    autocomplete="off"
+                >
+
+                <button type="button" id="clearSearch" class="btn btn-primary">
+                    Temizle
+                </button>
+            </div>
+
+            <p id="resultCount" class="result-count" aria-live="polite">
+                8 etkinlik gösteriliyor.
+            </p>
+        </section>
+
+        <section class="event-grid" id="eventGrid">
+
+            <article class="event-card">
+                <div class="event-number">01</div>
+                <span class="event-category">YAZILIM</span>
+                <h2>Python Programlama Atölyesi</h2>
+                <p class="event-date">15 Kasım 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Bilgisayar Laboratuvarı</p>
+                <p>Python programlama dilinin temellerini öğrenerek ilk uygulamanı geliştir.</p>
+            </article>
+
+            <article class="event-card">
+                <div class="event-number">02</div>
+                <span class="event-category">YAPAY ZEKÂ</span>
+                <h2>Yapay Zekâ ve Gelecek</h2>
+                <p class="event-date">18 Kasım 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Konferans Salonu</p>
+                <p>Yapay zekâ teknolojilerini ve gelecekteki kullanım alanlarını keşfet.</p>
+            </article>
+
+            <article class="event-card">
+                <div class="event-number">03</div>
+                <span class="event-category">WEB</span>
+                <h2>Web Tasarım ve HTML Atölyesi</h2>
+                <p class="event-date">22 Kasım 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Bilgisayar Laboratuvarı</p>
+                <p>HTML ve CSS kullanarak modern web sayfalarının temelini oluştur.</p>
+            </article>
+
+            <article class="event-card">
+                <div class="event-number">04</div>
+                <span class="event-category">SİBER GÜVENLİK</span>
+                <h2>Siber Güvenlik Farkındalığı</h2>
+                <p class="event-date">25 Kasım 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Seminer Salonu</p>
+                <p>Dijital güvenlik, güçlü parolalar ve çevrim içi tehditler hakkında bilgi edin.</p>
+            </article>
+
+            <article class="event-card">
+                <div class="event-number">05</div>
+                <span class="event-category">YAZILIM</span>
+                <h2>JavaScript ile İlk Projem</h2>
+                <p class="event-date">29 Kasım 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Bilgisayar Laboratuvarı</p>
+                <p>JavaScript ile etkileşimli web uygulamaları geliştirmeye başla.</p>
+            </article>
+
+            <article class="event-card">
+                <div class="event-number">06</div>
+                <span class="event-category">ROBOTİK</span>
+                <h2>Robotik Kodlama Tanıtımı</h2>
+                <p class="event-date">3 Aralık 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Teknoloji Atölyesi</p>
+                <p>Robotik sistemlerin çalışma mantığını ve temel kodlama süreçlerini tanı.</p>
+            </article>
+
+            <article class="event-card">
+                <div class="event-number">07</div>
+                <span class="event-category">VERİ</span>
+                <h2>Veri Tabanı ve SQL Eğitimi</h2>
+                <p class="event-date">7 Aralık 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Bilgisayar Laboratuvarı</p>
+                <p>SQL sorguları ve veri tabanı yönetiminin temel mantığını öğren.</p>
+            </article>
+
+            <article class="event-card">
+                <div class="event-number">08</div>
+                <span class="event-category">KARİYER</span>
+                <h2>Yazılımda Kariyer ve Girişimcilik</h2>
+                <p class="event-date">12 Aralık 2026</p>
+                <p class="event-location">Bartın Üniversitesi · Konferans Salonu</p>
+                <p>Yazılım sektöründeki kariyer seçeneklerini ve proje geliştirme yollarını keşfet.</p>
+            </article>
+
+        </section>
+
+        <p id="noResults" class="no-results" hidden>
+            Aradığınız etkinlik bulunamadı. Farklı bir kelime deneyebilirsiniz.
+        </p>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 BARÜ TECH | Öğrenci Web Projesi</p>
+        <a href="index.html">Ana Sayfaya Dön ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
